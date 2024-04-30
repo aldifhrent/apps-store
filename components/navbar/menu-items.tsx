@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const MenuItems = () => {
   return (
-    <div>MenuItems</div>
-  )
-}
+    <ul className="md:flex gap-x-4 hidden">
+      <li className="text-md">Home</li>
+      <li>Jeans</li>  
+      <li>About us</li>
+    </ul>
+  );
+};
 
-export default MenuItems
+export default MenuItems;
