@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { BackButton } from "./back-button";
 import { Header } from "./auth/header";
 import { Social } from "./auth/social";
+import { Separator } from "./ui/separator";
 
 interface CardWrapperProps {
   children: React.ReactNode;
@@ -29,7 +30,8 @@ const CardWrapper = ({
           <Social/>
         </CardFooter>
       )}
-      <CardFooter>
+      <Separator className="max-w-[200px] mx-auto"/>
+      <CardFooter className="mt-4">
         <BackButton href={backButtonHref} label={backButtonLabel} />
       </CardFooter>
     </Card>

@@ -34,6 +34,7 @@ const RegisterForm = () => {
       headerLabel={"Register"}
       backButtonLabel={"Already have an account"}
       backButtonHref={"/sign-in"}
+      showSocial
     >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -43,7 +44,7 @@ const RegisterForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input {...field} placeholder="John Doe" type="name" />
                   </FormControl>
